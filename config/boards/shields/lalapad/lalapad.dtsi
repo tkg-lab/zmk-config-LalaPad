@@ -112,7 +112,7 @@
         y-invert;
 
         sensitivity = "2x";
-		// no-taps;
+		//no-taps;
         no-smoothing;
         //absolute-mode;
     };

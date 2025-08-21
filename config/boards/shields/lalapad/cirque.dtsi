@@ -14,8 +14,8 @@
 
         sensitivity = "2x";
         // sleep;
-        no-taps;
-        // absolute-mode;
+        // no-taps;
+        absolute-mode;
 
         absolute-mode-clamp-min-x=<271>;
         absolute-mode-clamp-max-x=<1713>;

@@ -107,6 +107,10 @@
         spi-max-frequency = <1000000>;
         dr-gpios = <&xiao_d 7 (GPIO_ACTIVE_HIGH)>;
 
+        rotate-90;
+        x-invert;
+        y-invert;
+
         sensitivity = "2x";
 		// no-taps;
         no-smoothing;

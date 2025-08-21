@@ -246,7 +246,7 @@
         win_Control {
             display-name = "win_control";
             bindings = <
-&trans  &kp LA(SPACE)  &kp LA(TAB)     &kp LG(DOWN_ARROW)  &kp LG(UP_ARROW)  &kp LG(T)  &kp LC(LS(S))  &kp LS(LC(TAB))         &kp LG(TAB)  &kp LC(TAB)          &kp LC(X)  &kp LC(Z)
+&trans  &kp LA(SPACE)  &kp LA(TAB)     &kp LG(DOWN_ARROW)  &kp LG(UP_ARROW)  &kp LG(T)  &kp LS(LG(S))  &kp LS(LC(TAB))         &kp LG(TAB)  &kp LC(TAB)          &kp LC(X)  &kp LC(Z)
 &trans  &trans         &kp C_MUTE      &kp C_VOLUME_DOWN   &kp C_VOLUME_UP   &kp LG(D)  &kp HOME       &kp LC(LG(LEFT_ARROW))  &kp LG(TAB)  &kp LG(LC(RIGHT))    &kp LC(C)  &kp LC(A)
 &trans  &trans         &kp C_PREVIOUS  &kp C_PLAY_PAUSE    &kp C_NEXT        &trans     &kp END        &kp LA(LEFT_ARROW)      &kp LC(F)    &kp LA(RIGHT_ARROW)  &kp LC(V)  &kp LC(S)
 &trans  &trans         &trans          &trans              &trans            &trans     &trans         &trans                  &trans       &trans               &trans     &trans

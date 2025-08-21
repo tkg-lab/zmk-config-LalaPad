@@ -24,14 +24,16 @@
     input-processors =
         <&zip_xy_transform (INPUT_TRANSFORM_XY_SWAP | INPUT_TRANSFORM_X_INVERT | INPUT_TRANSFORM_Y_INVERT)>,
         <&zip_xy_scaler 3 2>;
-        //<&zip_temp_layer MOUSE_R_LAYER 500>;
+
+    //<&zip_temp_layer MOUSE_R_LAYER 500>;
 
     lowspeedmode {
         layers = <SECONDARY_LAYER>;
         input-processors =
             <&zip_xy_transform (INPUT_TRANSFORM_XY_SWAP | INPUT_TRANSFORM_X_INVERT | INPUT_TRANSFORM_Y_INVERT)>,
             <&zip_xy_scaler 3 5>;
-            //<&zip_temp_layer MOUSE_R_LAYER 500>;
+
+        //<&zip_temp_layer MOUSE_R_LAYER 500>;
     };
 
     scroller {
@@ -47,14 +49,16 @@
     input-processors =
         <&zip_xy_transform (INPUT_TRANSFORM_XY_SWAP | INPUT_TRANSFORM_X_INVERT | INPUT_TRANSFORM_Y_INVERT)>,
         <&zip_xy_scaler 3 2>;
-        //<&zip_temp_layer MOUSE_R_LAYER 500>;
+
+    //<&zip_temp_layer MOUSE_R_LAYER 500>;
 
     lowspeedmode {
         layers = <SECONDARY_LAYER>;
         input-processors =
             <&zip_xy_transform (INPUT_TRANSFORM_XY_SWAP | INPUT_TRANSFORM_X_INVERT | INPUT_TRANSFORM_Y_INVERT)>,
             <&zip_xy_scaler 3 4>;
-            //<&zip_temp_layer MOUSE_R_LAYER 500>;
+
+        //<&zip_temp_layer MOUSE_R_LAYER 500>;
     };
 
     scroller {
@@ -351,11 +355,11 @@
         ipad_contol {
             display-name = "ipad_control";
             bindings = <
-&trans            &kp LS(LC(N))  &kp LG(LC(F))    &kp LG(MINUS)      &kp LG(PLUS)     &kp LC(LS(NUMBER_3))  &kp LC(LS(LG(NUMBER_4)))  &kp LS(LC(TAB))     &kp LC(UP_ARROW)    &kp LC(TAB)          &kp LG(X)  &kp LG(Z)
-&trans            &trans         &kp C_MUTE       &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp LG(T)             &kp HOME                  &kp LC(LEFT_ARROW)  &kp LC(DOWN_ARROW)  &kp LC(RIGHT)        &kp LG(C)  &kp LG(A)
-&trans            &trans         &kp C_PREVIOUS   &kp C_PLAY_PAUSE   &kp C_NEXT       &trans                &kp END                   &kp LG(LEFT_ARROW)  &kp LG(F)           &kp LG(RIGHT_ARROW)  &kp LG(V)  &kp LG(S)
-&kp LEFT_CONTROL  &trans         &trans           &trans             &trans           &trans                &trans                    &trans              &trans              &trans               &trans     &trans
-                                 &kp RIGHT_ARROW  &kp DOWN_ARROW     &kp LEFT_ARROW   &kp UP_ARROW          &trans                    &trans              &trans              &trans
+&trans            &kp LS(LC(N))  &kp LG(LC(F))    &kp LG(MINUS)      &kp LG(PLUS)     &kp LC(LS(NUMBER_3))  &kp LC(LS(LG(NUMBER_4)))  &kp LS(LC(TAB))     &kp LC(UP_ARROW)  &kp LC(TAB)          &kp LG(X)  &kp LG(Z)
+&trans            &trans         &kp C_MUTE       &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp LG(T)             &kp HOME                  &kp LC(LEFT_ARROW)  &kp LC(H)         &kp LC(RIGHT)        &kp LG(C)  &kp LG(A)
+&trans            &trans         &kp C_PREVIOUS   &kp C_PLAY_PAUSE   &kp C_NEXT       &trans                &kp END                   &kp LG(LEFT_ARROW)  &kp LG(F)         &kp LG(RIGHT_ARROW)  &kp LG(V)  &kp LG(S)
+&kp LEFT_CONTROL  &trans         &trans           &trans             &trans           &trans                &trans                    &trans              &trans            &trans               &trans     &trans
+                                 &kp RIGHT_ARROW  &kp DOWN_ARROW     &kp LEFT_ARROW   &kp UP_ARROW          &trans                    &trans              &trans            &trans
             >;
         };
     };

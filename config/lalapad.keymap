@@ -230,7 +230,7 @@
             >;
         };
 
-        SECONDARY_LAYER {
+        NUM {
             display-name = "secondary_layer";
             sensor-bindings = <&scroll_left_right>, <&scroll_left_right>;
 
@@ -243,14 +243,14 @@
             >;
         };
 
-        TERTIARY_LAYER {
-            display-name = "tertiary_layer";
+        win_Control {
+            display-name = "win_control";
             bindings = <
-&trans  &kp F1   &kp F2   &kp F3   &kp F4   &kp F5   &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp F6   &kp F7   &kp F8   &kp F9   &kp F10  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp F11  &kp F12  &kp F13  &kp F14  &kp F15  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans   &trans   &trans   &trans   &trans   &trans  &trans  &trans  &trans  &trans  &trans
-                 &trans   &trans   &trans   &trans   &trans  &trans  &trans  &trans
+&trans  &kp F1   &kp F2   &kp F3   &kp F4   &kp F5   &kp LC(S)  &kp LS(LC(TAB))         &kp LG(TAB)  &kp LC(TAB)          &kp LC(X)  &kp LC(Z)
+&trans  &kp F6   &kp F7   &kp F8   &kp F9   &kp F10  &kp HOME   &kp LC(LG(LEFT_ARROW))  &kp LG(TAB)  &kp LG(LC(RIGHT))    &kp LC(C)  &kp LC(A)
+&trans  &kp F11  &kp F12  &kp F13  &kp F14  &kp F15  &kp END    &kp LA(LEFT_ARROW)      &kp LC(F)    &kp LA(RIGHT_ARROW)  &kp LC(V)  &kp LC(S)
+&trans  &trans   &trans   &trans   &trans   &trans   &trans     &trans                  &trans       &trans               &trans     &trans
+                 &trans   &trans   &trans   &trans   &trans     &trans                  &trans       &trans
             >;
         };
 

@@ -232,9 +232,9 @@
 
             bindings = <
 &kp ESC    &kp Q         &kp W         &kp E            &kp R             &kp T                   &kp Y                    &kp U             &kp I            &kp O             &kp P               &kp BACKSPACE
-&kp TAB    &kp A         &kp S         &kp D            &lt 9 F           &kp G                   &kp H                    &kp J             &kp K            &kp L             &kp MINUS           &kp ENTER
+&kp TAB    &kp A         &kp S         &kp D            &lt 5 F           &kp G                   &kp H                    &kp J             &kp K            &kp L             &kp MINUS           &kp ENTER
 &kp LSHFT  &kp Z         &kp X         &kp C            &kp V             &kp B                   &kp N                    &kp M             &kp COMMA        &kp PERIOD        &kp SLASH           &kp SEMICOLON
-&kp LCTRL  &kp LEFT_WIN  &kp LEFT_ALT  &lt 6 SPACE      &lt 1 LANGUAGE_2  &lt 7 LEFT_PARENTHESIS  &lt 7 RIGHT_PARENTHESIS  &lt 1 LANGUAGE_1  &lt 6 ENTER      &kp LS(UP_ARROW)  &kp LS(DOWN_ARROW)  &to 2
+&kp LCTRL  &kp LEFT_WIN  &kp LEFT_ALT  &lt 7 SPACE      &lt 1 LANGUAGE_2  &lt 8 LEFT_PARENTHESIS  &lt 8 RIGHT_PARENTHESIS  &lt 1 LANGUAGE_1  &lt 7 ENTER      &kp LS(UP_ARROW)  &kp LS(DOWN_ARROW)  &to 2
                          &allow_end    &allow_pagedown  &allow_home       &allow_pageup           &allow_pageup            &allow_home       &allow_pagedown  &allow_end
             >;
         };
@@ -254,9 +254,9 @@
             display-name = "Mac";
             bindings = <
 &kp ESC    &kp Q         &kp W         &kp E            &kp R             &kp T                   &kp Y                    &kp U             &kp I            &kp O             &kp P               &kp BACKSPACE
-&kp TAB    &kp A         &kp S         &kp D            &lt 9 F           &kp G                   &kp H                    &kp J             &kp K            &kp L             &kp MINUS           &kp ENTER
+&kp TAB    &kp A         &kp S         &kp D            &lt 5 F           &kp G                   &kp H                    &kp J             &kp K            &kp L             &kp MINUS           &kp ENTER
 &kp LSHFT  &kp Z         &kp X         &kp C            &kp V             &kp B                   &kp N                    &kp M             &kp COMMA        &kp PERIOD        &kp SLASH           &kp SEMICOLON
-&kp LCTRL  &kp LEFT_WIN  &kp LEFT_ALT  &lt 6 SPACE      &lt 3 LANGUAGE_2  &lt 7 LEFT_PARENTHESIS  &lt 7 RIGHT_PARENTHESIS  &lt 3 LANGUAGE_1  &lt 6 ENTER      &kp LS(UP_ARROW)  &kp LS(DOWN_ARROW)  &to 0
+&kp LCTRL  &kp LEFT_WIN  &kp LEFT_ALT  &lt 7 SPACE      &lt 3 LANGUAGE_2  &lt 8 LEFT_PARENTHESIS  &lt 8 RIGHT_PARENTHESIS  &lt 3 LANGUAGE_1  &lt 7 ENTER      &kp LS(UP_ARROW)  &kp LS(DOWN_ARROW)  &to 0
                          &allow_end    &allow_pagedown  &allow_home       &allow_pageup           &allow_pageup            &allow_home       &allow_pagedown  &allow_end
             >;
 
@@ -278,13 +278,24 @@
             display-name = "ipad";
             bindings = <
 &kp ESC    &kp Q         &kp W         &kp E            &kp R             &kp T                   &kp Y                    &kp U             &kp I            &kp O             &kp P               &kp BACKSPACE
-&kp TAB    &kp A         &kp S         &kp D            &lt 9 F           &kp G                   &kp H                    &kp J             &kp K            &kp L             &kp MINUS           &kp ENTER
+&kp TAB    &kp A         &kp S         &kp D            &lt 5 F           &kp G                   &kp H                    &kp J             &kp K            &kp L             &kp MINUS           &kp ENTER
 &kp LSHFT  &kp Z         &kp X         &kp C            &kp V             &kp B                   &kp N                    &kp M             &kp COMMA        &kp PERIOD        &kp SLASH           &kp SEMICOLON
-&kp LCTRL  &kp LEFT_WIN  &kp LEFT_ALT  &lt 6 SPACE      &lt 5 LANGUAGE_2  &lt 7 LEFT_PARENTHESIS  &lt 7 RIGHT_PARENTHESIS  &lt 5 LANGUAGE_1  &lt 6 ENTER      &kp LS(UP_ARROW)  &kp LS(DOWN_ARROW)  &to 0
+&kp LCTRL  &kp LEFT_WIN  &kp LEFT_ALT  &lt 7 SPACE      &lt 6 LANGUAGE_2  &lt 8 LEFT_PARENTHESIS  &lt 8 RIGHT_PARENTHESIS  &lt 6 LANGUAGE_1  &lt 7 ENTER      &kp LS(UP_ARROW)  &kp LS(DOWN_ARROW)  &to 0
                          &allow_end    &allow_pagedown  &allow_home       &allow_pageup           &allow_pageup            &allow_home       &allow_pagedown  &allow_end
             >;
 
             sensor-bindings = <&scroll_down_up>, <&scroll_up_down>;
+        };
+
+        SCROLL_R_LAYER {
+            display-name = "scroll_r_layer";
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+                &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+            >;
         };
 
         ipad_contol {
@@ -328,21 +339,10 @@
             display-name = "mouse_r_layer";
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans     &trans     &trans     &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &mkp LCLK  &mkp MCLK  &mkp RCLK  &mo 9
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &mkp LCLK  &mkp MCLK  &mkp RCLK  &mo 5
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &mkp MB4   &mkp MB5   &trans     &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans     &trans     &trans     &trans
                 &trans  &trans  &trans  &trans  &trans  &trans  &trans     &trans
-            >;
-        };
-
-        SCROLL_R_LAYER {
-            display-name = "scroll_r_layer";
-            bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
 

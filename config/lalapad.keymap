@@ -231,24 +231,11 @@
             sensor-bindings = <&scroll_down_up>, <&scroll_up_down>;
 
             bindings = <
-&kp ESC    &kp Q         &kp W         &kp E            &kp R             &kp T                   &kp Y                    &kp U             &kp I            &kp O         &kp P             &kp BACKSPACE
-&kp TAB    &kp A         &kp S         &kp D            &lt 5 F           &kp G                   &kp H                    &kp J             &kp J            &kp L         &kp MINUS         &kp ENTER
-&kp LSHFT  &kp Z         &kp X         &kp C            &kp V             &kp B                   &kp N                    &kp M             &kp COMMA        &kp PERIOD    &kp SLASH         &kp SEMICOLON
-&kp LCTRL  &kp LEFT_WIN  &kp LEFT_ALT  &lt 1 SPACE      &lt 2 LANGUAGE_2  &lt 3 LEFT_PARENTHESIS  &lt 3 RIGHT_PARENTHESIS  &lt 2 LANGUAGE_1  &lt 1 ENTER      &kp LS(DOWN)  &kp LS(UP_ARROW)  &to 8
+&kp ESC    &kp Q         &kp W         &kp E            &kp R             &kp T                   &kp Y                    &kp U             &kp I            &kp O             &kp P               &kp BACKSPACE
+&kp TAB    &kp A         &kp S         &kp D            &lt 9 F           &kp G                   &kp H                    &kp J             &kp K            &kp L             &kp MINUS           &kp ENTER
+&kp LSHFT  &kp Z         &kp X         &kp C            &kp V             &kp B                   &kp N                    &kp M             &kp COMMA        &kp PERIOD        &kp SLASH           &kp SEMICOLON
+&kp LCTRL  &kp LEFT_WIN  &kp LEFT_ALT  &lt 6 SPACE      &lt 1 LANGUAGE_2  &lt 7 LEFT_PARENTHESIS  &lt 7 RIGHT_PARENTHESIS  &lt 1 LANGUAGE_1  &lt 6 ENTER      &kp LS(UP_ARROW)  &kp LS(DOWN_ARROW)  &to 2
                          &allow_end    &allow_pagedown  &allow_home       &allow_pageup           &allow_pageup            &allow_home       &allow_pagedown  &allow_end
-            >;
-        };
-
-        NUM {
-            display-name = "secondary_layer";
-            sensor-bindings = <&scroll_left_right>, <&scroll_left_right>;
-
-            bindings = <
-&kp CARET       &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp PIPE         &kp DOT            &kp NUMBER_7      &kp NUMBER_8  &kp NUMBER_9    &kp PLUS        &kp BACKSPACE
-&kp TILDE       &kp AMPERSAND   &kp DOLLAR       &kp HASH          &kp AT_SIGN        &kp EXCLAMATION  &kp NUMBER_0       &kp NUMBER_4      &kp NUMBER_5  &kp NUMBER_6    &kp MINUS       &kp ENTER
-&kp LEFT_SHIFT  &kp SEMICOLON   &kp COLON        &kp SLASH         &kp ASTERISK       &kp KP_NUMLOCK   &kp EQUAL          &kp NUMBER_1      &kp NUMBER_2  &kp NUMBER_3    &kp UP_ARROW    &to 9
-&to 10          &trans          &trans           &kp SPACE         &kp SEMICOLON      &kp COLON        &kp DOUBLE_QUOTES  &kp SINGLE_QUOTE  &kp ENTER     &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT
-                                &trans           &trans            &trans             &trans           &trans             &trans            &trans        &trans
             >;
         };
 
@@ -260,6 +247,67 @@
 &trans  &trans         &kp C_PREVIOUS  &kp C_PLAY_PAUSE    &kp C_NEXT        &trans     &kp END        &kp LA(LEFT_ARROW)      &kp LC(F)    &kp LA(RIGHT_ARROW)  &kp LC(V)  &kp LC(S)
 &trans  &trans         &trans          &trans              &trans            &trans     &trans         &trans                  &trans       &trans               &trans     &trans
                        &trans          &trans              &trans            &trans     &trans         &trans                  &trans       &trans
+            >;
+        };
+
+        mac_layer {
+            display-name = "Mac";
+            bindings = <
+&kp ESC    &kp Q         &kp W         &kp E            &kp R             &kp T                   &kp Y                    &kp U             &kp I            &kp O             &kp P               &kp BACKSPACE
+&kp TAB    &kp A         &kp S         &kp D            &lt 9 F           &kp G                   &kp H                    &kp J             &kp K            &kp L             &kp MINUS           &kp ENTER
+&kp LSHFT  &kp Z         &kp X         &kp C            &kp V             &kp B                   &kp N                    &kp M             &kp COMMA        &kp PERIOD        &kp SLASH           &kp SEMICOLON
+&kp LCTRL  &kp LEFT_WIN  &kp LEFT_ALT  &lt 6 SPACE      &lt 3 LANGUAGE_2  &lt 7 LEFT_PARENTHESIS  &lt 7 RIGHT_PARENTHESIS  &lt 3 LANGUAGE_1  &lt 6 ENTER      &kp LS(UP_ARROW)  &kp LS(DOWN_ARROW)  &to 0
+                         &allow_end    &allow_pagedown  &allow_home       &allow_pageup           &allow_pageup            &allow_home       &allow_pagedown  &allow_end
+            >;
+
+            sensor-bindings = <&scroll_down_up>, <&scroll_up_down>;
+        };
+
+        mac_Control {
+            display-name = "mac_control";
+            bindings = <
+&trans  &kp LS(LC(N))  &kp LG(LC(F))   &kp LG(MINUS)      &kp LG(PLUS)     &kp LC(LS(NUMBER_3))  &kp LC(LS(LG(NUMBER_4)))  &kp LS(LC(TAB))     &kp LC(UP_ARROW)    &kp LC(TAB)          &kp LG(X)  &kp LG(Z)
+&trans  &trans         &kp C_MUTE      &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp LG(T)             &kp HOME                  &kp LC(LEFT_ARROW)  &kp LC(DOWN_ARROW)  &kp LC(RIGHT)        &kp LG(C)  &kp LG(A)
+&trans  &trans         &kp C_PREVIOUS  &kp C_PLAY_PAUSE   &kp C_NEXT       &trans                &kp END                   &kp LG(LEFT_ARROW)  &kp LG(F)           &kp LG(RIGHT_ARROW)  &kp LG(V)  &kp LG(S)
+&trans  &trans         &trans          &trans             &trans           &trans                &trans                    &trans              &trans              &trans               &trans     &trans
+                       &trans          &trans             &trans           &trans                &trans                    &trans              &trans              &trans
+            >;
+        };
+
+        ipad_layer {
+            display-name = "ipad";
+            bindings = <
+&kp ESC    &kp Q         &kp W         &kp E            &kp R             &kp T                   &kp Y                    &kp U             &kp I            &kp O             &kp P               &kp BACKSPACE
+&kp TAB    &kp A         &kp S         &kp D            &lt 9 F           &kp G                   &kp H                    &kp J             &kp K            &kp L             &kp MINUS           &kp ENTER
+&kp LSHFT  &kp Z         &kp X         &kp C            &kp V             &kp B                   &kp N                    &kp M             &kp COMMA        &kp PERIOD        &kp SLASH           &kp SEMICOLON
+&kp LCTRL  &kp LEFT_WIN  &kp LEFT_ALT  &lt 6 SPACE      &lt 5 LANGUAGE_2  &lt 7 LEFT_PARENTHESIS  &lt 7 RIGHT_PARENTHESIS  &lt 5 LANGUAGE_1  &lt 6 ENTER      &kp LS(UP_ARROW)  &kp LS(DOWN_ARROW)  &to 0
+                         &allow_end    &allow_pagedown  &allow_home       &allow_pageup           &allow_pageup            &allow_home       &allow_pagedown  &allow_end
+            >;
+
+            sensor-bindings = <&scroll_down_up>, <&scroll_up_down>;
+        };
+
+        ipad_contol {
+            display-name = "ipad_control";
+            bindings = <
+&trans            &kp LS(LC(N))  &kp LG(F)        &kp LG(MINUS)      &kp LG(PLUS)     &kp LC(LS(NUMBER_3))  &kp LG(SPACE)  &kp LC(LEFT_ARROW)    &kp LC(UP_ARROW)    &kp LC(RIGHT_ARROW)    &kp LG(X)  &kp LG(Z)
+&trans            &trans         &kp C_MUTE       &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp LG(LA(D))         &kp HOME       &kp LG(LEFT_ARROW)    &kp LC(DOWN_ARROW)  &kp LG(RIGHT)          &kp LG(C)  &kp LG(A)
+&trans            &trans         &kp C_PREVIOUS   &kp C_PLAY_PAUSE   &kp C_NEXT       &trans                &kp END        &kp LG(LEFT_BRACKET)  &kp LG(H)           &kp LG(RIGHT_BRACKET)  &kp LG(V)  &kp LG(S)
+&kp LEFT_CONTROL  &trans         &trans           &trans             &trans           &trans                &trans         &trans                &trans              &trans                 &trans     &trans
+                                 &kp RIGHT_ARROW  &kp DOWN_ARROW     &kp LEFT_ARROW   &kp UP_ARROW          &trans         &trans                &trans              &trans
+            >;
+        };
+
+        NUM {
+            display-name = "secondary_layer";
+            sensor-bindings = <&scroll_left_right>, <&scroll_left_right>;
+
+            bindings = <
+&kp CARET       &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp PIPE         &kp DOT            &kp NUMBER_7      &kp NUMBER_8  &kp NUMBER_9    &kp PLUS        &kp DELETE
+&kp TILDE       &kp AMPERSAND   &kp DOLLAR       &kp HASH          &kp AT_SIGN        &kp EXCLAMATION  &kp NUMBER_0       &kp NUMBER_4      &kp NUMBER_5  &kp NUMBER_6    &kp MINUS       &kp LC(DEL)
+&kp LEFT_SHIFT  &kp SEMICOLON   &kp COLON        &kp SLASH         &kp ASTERISK       &kp KP_NUMLOCK   &kp EQUAL          &kp NUMBER_1      &kp NUMBER_2  &kp NUMBER_3    &kp UP_ARROW    &kp BACKSPACE
+&to 0           &to 2           &to 4            &kp SPACE         &kp SEMICOLON      &kp COLON        &kp DOUBLE_QUOTES  &kp SINGLE_QUOTE  &kp ENTER     &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT
+                                &trans           &trans            &trans             &trans           &trans             &trans            &trans        &trans
             >;
         };
 
@@ -280,7 +328,7 @@
             display-name = "mouse_r_layer";
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans     &trans     &trans     &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &mkp LCLK  &mkp MCLK  &mkp RCLK  &mo 5
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &mkp LCLK  &mkp MCLK  &mkp RCLK  &mo 9
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &mkp MB4   &mkp MB5   &trans     &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans     &trans     &trans     &trans
                 &trans  &trans  &trans  &trans  &trans  &trans  &trans     &trans
@@ -302,7 +350,7 @@
             display-name = "mouse_l_layer";
             bindings = <
 &trans  &trans     &trans     &trans     &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&mo 7   &mkp RCLK  &mkp MCLK  &mkp LCLK  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&mo 11  &mkp RCLK  &mkp MCLK  &mkp LCLK  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans     &mkp MB5   &mkp MB4   &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans     &trans     &trans     &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
                    &trans     &trans     &trans  &trans  &trans  &trans  &trans  &trans
@@ -317,54 +365,6 @@
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
                 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-            >;
-        };
-
-        mac_layer {
-            display-name = "Mac";
-            bindings = <
-&kp ESC    &kp Q         &kp W         &kp E            &kp R             &kp T                   &kp Y                    &kp U             &kp I            &kp O         &kp P             &kp BACKSPACE
-&kp TAB    &kp A         &kp S         &kp D            &lt 5 F           &kp G                   &kp H                    &kp J             &kp K            &kp L         &kp MINUS         &kp ENTER
-&kp LSHFT  &kp Z         &kp X         &kp C            &kp V             &kp B                   &kp N                    &kp M             &kp COMMA        &kp PERIOD    &kp SLASH         &kp SEMICOLON
-&kp LCTRL  &kp LEFT_WIN  &kp LEFT_ALT  &lt 1 SPACE      &lt 9 LANGUAGE_2  &lt 3 LEFT_PARENTHESIS  &lt 3 RIGHT_PARENTHESIS  &lt 9 LANGUAGE_1  &lt 1 LS(ENTER)  &kp LS(DOWN)  &kp LS(UP_ARROW)  &to 0
-                         &allow_end    &allow_pagedown  &allow_home       &allow_pageup           &allow_pageup            &allow_home       &allow_pagedown  &allow_end
-            >;
-
-            sensor-bindings = <&scroll_down_up>, <&scroll_up_down>;
-        };
-
-        mac_Control {
-            display-name = "mac_control";
-            bindings = <
-&trans  &kp LS(LC(N))  &kp LG(LC(F))   &kp LG(MINUS)      &kp LG(PLUS)     &kp LC(LS(NUMBER_3))  &kp LC(LS(LG(NUMBER_4)))  &kp LS(LC(TAB))     &kp LC(UP_ARROW)    &kp LC(TAB)          &kp LG(X)  &kp LG(Z)
-&trans  &trans         &kp C_MUTE      &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp LG(T)             &kp HOME                  &kp LC(LEFT_ARROW)  &kp LC(DOWN_ARROW)  &kp LC(RIGHT)        &kp LG(C)  &kp LG(A)
-&trans  &trans         &kp C_PREVIOUS  &kp C_PLAY_PAUSE   &kp C_NEXT       &trans                &kp END                   &kp LG(LEFT_ARROW)  &kp LG(F)           &kp LG(RIGHT_ARROW)  &kp LG(V)  &kp LG(S)
-&trans  &trans         &trans          &trans             &trans           &trans                &trans                    &trans              &trans              &trans               &trans     &trans
-                       &trans          &trans             &trans           &trans                &trans                    &trans              &trans              &trans
-            >;
-        };
-
-        ipad_layer {
-            display-name = "ipad";
-            bindings = <
-&kp ESC    &kp Q         &kp W         &kp E            &kp R              &kp T                   &kp Y                    &kp U              &kp I            &kp O         &kp P             &kp BACKSPACE
-&kp TAB    &kp A         &kp S         &kp D            &lt 5 F            &kp G                   &kp H                    &kp J              &kp K            &kp L         &kp MINUS         &kp ENTER
-&kp LSHFT  &kp Z         &kp X         &kp C            &kp V              &kp B                   &kp N                    &kp M              &kp COMMA        &kp PERIOD    &kp SLASH         &kp SEMICOLON
-&kp LCTRL  &kp LEFT_WIN  &kp LEFT_ALT  &lt 1 SPACE      &lt 11 LANGUAGE_2  &lt 3 LEFT_PARENTHESIS  &lt 3 RIGHT_PARENTHESIS  &lt 11 LANGUAGE_1  &lt 1 LS(ENTER)  &kp LS(DOWN)  &kp LS(UP_ARROW)  &to 0
-                         &allow_end    &allow_pagedown  &allow_home        &allow_pageup           &allow_pageup            &allow_home        &allow_pagedown  &allow_end
-            >;
-
-            sensor-bindings = <&scroll_down_up>, <&scroll_up_down>;
-        };
-
-        ipad_contol {
-            display-name = "ipad_control";
-            bindings = <
-&trans            &kp LS(LC(N))  &kp LG(F)        &kp LG(MINUS)      &kp LG(PLUS)     &kp LC(LS(NUMBER_3))  &kp LG(SPACE)  &kp LC(LEFT_ARROW)    &kp LC(UP_ARROW)    &kp LC(RIGHT_ARROW)    &kp LG(X)  &kp LG(Z)
-&trans            &trans         &kp C_MUTE       &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp LG(LA(D))         &kp HOME       &kp LG(LEFT_ARROW)    &kp LC(DOWN_ARROW)  &kp LG(RIGHT)          &kp LG(C)  &kp LG(A)
-&trans            &trans         &kp C_PREVIOUS   &kp C_PLAY_PAUSE   &kp C_NEXT       &trans                &kp END        &kp LG(LEFT_BRACKET)  &kp LG(H)           &kp LG(RIGHT_BRACKET)  &kp LG(V)  &kp LG(S)
-&kp LEFT_CONTROL  &trans         &trans           &trans             &trans           &trans                &trans         &trans                &trans              &trans                 &trans     &trans
-                                 &kp RIGHT_ARROW  &kp DOWN_ARROW     &kp LEFT_ARROW   &kp UP_ARROW          &trans         &trans                &trans              &trans
             >;
         };
     };
